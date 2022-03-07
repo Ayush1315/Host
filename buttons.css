@@ -96,6 +96,6 @@ button:hover{
     color:rgb(192, 192, 9);
 }
 .blue{
-    border:0.5rem solid blue;
+    border:0.5rem solid red;
     color:blue;
 }
