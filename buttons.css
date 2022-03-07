@@ -1,0 +1,101 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+
+}
+.buttons{
+    width:100vw;
+    height:100vh;
+    background-color: cyan;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.btnholder{
+    width:70%;
+    height:7rem;
+    background-color: whitesmoke;
+    border-radius: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin:3rem;
+}
+button{
+    display: inline-block;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+button:hover{
+    box-shadow: 2px 2px 3px  grey,-2px -2px 3px  grey;
+}
+.normalbtn>button{
+    width:5rem;
+    padding:0.4rem 0.7rem;
+    margin: 0 2rem;
+    background-color: white;
+    border-radius:  10px;
+}
+.colorbtn>button{
+    width:5rem;
+    padding:0.4rem 0.7rem;
+    margin: 0 2rem;
+    background-color: white;
+    border-radius:  10px;
+    color:white;  
+    font-weight: bold;  
+}
+.colorbtn>.red{
+    background-color: red;
+}
+.colorbtn>.red:hover{
+    background-color: white;
+    color:red;
+    border:0.1rem solid red;
+}
+.colorbtn>.green{
+    background-color: green;
+}
+.colorbtn>.green:hover{
+    background-color: white;
+    color:green;
+    border:0.1rem solid green;
+}
+.colorbtn>.yellow{
+    background-color:rgb(192, 192, 9);
+}
+.colorbtn>.yellow:hover{
+    background-color: white;
+    color:rgb(192,192,9);
+    border:0.1rem solid rgb(192,192,9);
+}
+.colorbtn>.blue{
+    background-color:blue;
+}
+.colorbtn>.blue:hover{
+    background-color: white;
+    color:blue;
+    border:0.1rem solid blue;
+}
+.red{
+    border:0.1rem solid red;
+    color:red;
+}
+.green{
+    border:0.1rem solid green;
+    color:green;
+}
+.yellow{
+    border:0.1rem solid rgb(192, 192, 9);
+    color:rgb(192, 192, 9);
+}
+.blue{
+    border:0.1rem solid blue;
+    color:blue;
+}
