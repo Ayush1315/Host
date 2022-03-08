@@ -1,3 +1,4 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css");
 *{
     margin:0;
     padding:0;
@@ -6,17 +7,16 @@
 }
 .buttons{
     width:100vw;
-    height:100vh;
+    height:fit-content;
     background-color: cyan;
     display: flex;
-    flex-wrap: wrap;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 .btnholder{
     width:70%;
-    height:7rem;
+    height:fit-content;
     background-color: whitesmoke;
     border-radius: 2rem;
     display: flex;
@@ -38,14 +38,14 @@ button:hover{
 .normalbtn>button{
     width:5rem;
     padding:0.4rem 0.7rem;
-    margin: 0 2rem;
+    margin: 1rem 2rem;
     background-color: white;
     border-radius:  10px;
 }
 .colorbtn>button{
     width:5rem;
     padding:0.4rem 0.7rem;
-    margin: 0 2rem;
+    margin: 1rem 2rem;
     background-color: white;
     border-radius:  10px;
     color:white;  
@@ -99,3 +99,129 @@ button:hover{
     border:0.1rem solid blue;
     color:blue;
 }
+.primarybtn >button{
+    background-color: blue;
+    width:5rem;
+    padding:0.6rem 0.7rem;
+    margin: 1rem 2rem;
+    font-weight: bold; 
+    color:white;  
+    border:none;
+    border-radius: 5px;
+}
+.primarybtn >button:hover{
+    text-shadow: 1px 1px 2px black;
+}
+.glowbtn>button{
+    width:5rem;
+    padding:0.4rem 0.7rem;
+    margin: 1rem 2rem;
+    background-color: white;
+    border-radius:  10px;
+    font-weight: bold;  
+}
+.glowbtn>.red{
+    background-color: red;
+    animation: redglow 2s ease-in-out 0.5s infinite backwards;
+    color:white;
+}
+@keyframes redglow {
+    0%{
+        background-color: red;
+
+    }
+    50%{
+        background-color: rgb(150, 4, 4);
+        box-shadow: 3px 3px 5px 1px red,-3px -3px 5px 1px red;
+        text-shadow: 1px 1px 5px black;
+    }
+    100%{
+        background-color: red;
+
+    }
+}
+.glowbtn>.green{
+    background-color: green;
+    animation: greenglow 2s ease-in-out 0.5s infinite backwards;
+    color:white;
+}
+@keyframes greenglow {
+    0%{
+        background-color: green;
+
+    }
+    50%{
+        background-color: greenyellow;
+        box-shadow: 3px 3px 5px 1px greenyellow,-3px -3px 5px 1px greenyellow;
+        text-shadow: 1px 1px 5px black;
+    }
+    100%{
+        background-color: green;
+
+    }
+}
+.glowbtn>.yellow{
+    background-color:rgb(192, 192, 9);
+    color:white;
+    animation: yellowglow 2s ease-in-out 0.5s infinite backwards;
+}
+@keyframes yellowglow {
+    0%{
+        background-color: rgb(192, 192, 9);
+
+    }
+    50%{
+        background-color: rgb(253, 255, 137);
+        box-shadow: 3px 3px 5px 1px yellowgreen,-3px -3px 5px 1px yellowgreen;
+        text-shadow: 1px 1px 5px black;
+       
+    }
+    100%{
+        background-color: rgb(192, 192, 9);
+
+    }
+}
+.glowbtn>.blue{
+    /* background-color:blue; */
+    color:white;
+    animation: blueglow 2s ease-in-out 0.5s infinite backwards;
+}
+@keyframes blueglow {
+    0%{
+        background-color: blue;
+
+    }
+    50%{
+        background-color: rgb(2, 2, 136);
+        box-shadow: 3px 3px 5px 1px rgb(62, 75, 252),-3px -3px 5px 1px rgb(62, 75, 252);
+        text-shadow: 1px 1px 5px black;
+    }
+    100%{
+        background-color: blue;
+
+    }
+}.blockbtn{
+    width: 100% ;
+}
+.blockbtn>button{
+
+    padding:0.4rem 0.7rem;
+    margin: 1rem 0.5rem;
+    border-radius:  10px;
+    color:white;  
+    font-weight: bold; 
+}
+.blockbtt{
+    width:98%;
+    display: block;
+    background-color: blue;
+}
+.downbtt{
+    margin:1rem 2rem;
+    background-color: blue;
+    padding:1rem;
+    color:white;
+    border-radius: 15px;
+    border:none;
+}
+    
