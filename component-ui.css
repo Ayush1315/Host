@@ -334,6 +334,8 @@ footer>p{
         height:100vh;
 
     }
+    #side-list{
+        display:none;}
     #component-select{
         width:120px;
         font-size: 12px;
