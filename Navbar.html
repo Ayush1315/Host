@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/component-ui.css">
+    <link rel="icon" href="images/ic.ico">
+    <title>Navbar</title>
+    <script src="https://kit.fontawesome.com/aa04ad0668.js" crossorigin="anonymous"></script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Nunito&family=Quintessential&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai+Looped:wght@100&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Rowdies:wght@300&display=swap" rel="stylesheet">
+    <style>
+        #navbar {
+            background-color: #3a776c;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <!-- Top Navigation -->
+        <nav class="nav">
+            <div class="navigation-top">
+                <div id="start">
+                    <span id="menu-toggle" onclick="mainSide()"><i class="fas fa-bars" ></i></span>
+                    <span id="web-name">COLOR COMPONENTS</span>
+                </div>
+                <div class="logo">
+                    <img src="https://bit.ly/3GOvMbM" />
+                </div>
+                <div class="login">
+                    <a href="#">Login / Signup</a>
+                </div>
+            </div>
+        </nav>
+        <!-- Side Navigation -->
+        <div id="side">
+            <ul id="side-list">
+                <li id="avatars"><a href="avatars.html"> Avatars</a></li>
+                <li id="alert"><a href="Alert.html"> Alert</a></li>
+                <li id="audio"><a href="Audio-component.html">Audio</a></li>
+                <li id="card"><a href="cards.html"> Cards</a></li>
+                <li id="chips"><a href="Chips.html"> Chips</a></li>
+                <li id="btn"><a href="buttons.html"> Buttons</a></li>
+                <li id="check"><a href="#"> Checkboxes</a></li>
+                <li id="images"><a href="images.html"> Images</a></li>
+                <li id="modals"><a href="Modals.html"> Modal</a></li>
+                <li id="navbar"><a href="Navbar.html"> Navbar</a></li>
+                <li id="snack"><a href="snackbar.html"> Snackbar</a></li>
+            </ul>
+        </div>
+        <!-- Main Content -->
+        <div class="cont" id="page-cont">
+            <span class="heading">Navbar (Navigation-Bar)</span>
+            <p class="component-description">
+                A web browser navigation bar includes the back and forward buttons, as well as the Location bar where
+                URLs are entered. Formerly the functionality of the navigation bar was split between the browser's
+                toolbar and the address bar, but Google Chrome introduced the practice of merging the two.
+                <br>
+                <br>
+                <span>
+                    Ex:- E-commerce Websites, Social Media Websites, Coding Platforms,etc.
+                </span>
+            </p>
+            <div class="preview">
+                <div class="content-preview">
+                    <div class="navbar-preview">
+                        <!-- Basic Navigation -->
+                        <div id="basic-nav">
+                            <span class="nav-logo"><a href="#"><img src="Images/nav-logo.png" alt="logo"></a></span>
+                            <ul id="basic-nav-list" class="nav-list">
+                                <li><a href="#"> Home</a></li>
+                                <li> <a href="#"> Features</a></li>
+                                <li><a href="#"> Pricing</a></li>
+                                <li><a href="#"> About</a></li>
+                            </ul>
+                        </div>
+                        
+                        <!-- Side Navbar -->
+                        <div id="side-nav">
+                            <div id="nav-top">
+                                <span class="ham-switch" onclick="slideNav()"><i class="fa-solid fa-bars ham"></i></span>
+                            </div>
+                            <div id="nav-side">
+                                <ul id="side-nav-list">
+                                    <span class="nav-logo" ><a href="#"><img src="Images/nav-logo.png" alt="logo" id="side-logo"></a></span>
+                                    <li><a href="#"> Home</a></li>
+                                    <li> <a href="#"> Features</a></li>
+                                    <li><a href="#"> Pricing</a></li>
+                                    <li><a href="#"> About</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- Top Navigation -->
+                        <div id="top-nav">
+                            <div id="nav-top">
+                                <span class="ham-switch" onclick="downNav()"><i class="fa-solid fa-bars ham"></i></span>
+                            </div>
+                            <div id="nav-down">
+                                <ul id="down-nav-list">
+                                    <span class="nav-logo" ><a href="#"><img src="Images/nav-logo.png" alt="logo" id="side-logo"></a></span>
+                                    <li><a href="#"> Home</a></li>
+                                    <li> <a href="#"> Features</a></li>
+                                    <li><a href="#"> Pricing</a></li>
+                                    <li><a href="#"> About</a></li>
+                                    <span id="closeNav" onclick="closeNav()"><i class="fa-solid fa-xmark"></i></span>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- Search Navigation -->
+                        <div id="search-nav">
+                            <ul id="search-nav-list" class="nav-list">
+                                <span class="nav-logo"><a href="#"><img src="Images/nav-logo.png" alt="logo"></a></span>
+                                <li><a href="#"> Home</a></li>
+                                <li> <a href="#"> Features</a></li>
+                                <li><a href="#"> Pricing</a></li>
+                                <li><a href="#"> About</a></li>
+                            </ul>
+                            <div>
+                            <input type="search" id="search-page" placeholder="Search...">
+                             <span id="searchNav"  ><i class="fa-solid fa-magnifying-glass"onclick="showSearch()"></i></span></div> 
+                        </div>
+
+                    </div>
+
+                </div>
+                <select name="select-component" id="component-select" onchange="showDiv(this)">
+
+                </select>
+            </div>
+            <p class="component-description">
+
+            </p>
+            <div class="code">
+                <div id="con">
+                    <i class="fa fa-solid fa-circle red"></i>
+                    <i class="fa fa-solid fa-circle green"></i>
+                    <i class="fa fa-solid fa-circle yellow"></i>
+                </div>
+                <p id="copy-code">
+                </p>
+                <div class="bt">
+                    <button onclick="copyToClipboard()" id="copy-btn"><i class="fa fa-solid fa-copy"></i></button>
+                </div>
+            </div>
+
+        </div>
+        <!-- Footer -->
+        <footer>
+            <div id="foot">
+                <a href="https://www.facebook.com/profile.php?id=100007834680360" target="_blank" id="fb">
+                    <i class="fab fa-facebook"></i>
+                </a>
+                <a href="https://www.instagram.com/ayush1308rj/" target="_blank" id="insta">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/ayush-r-1a9095119/" target="_blank" id="linked">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="https://github.com/Ayush-1315" target="_blank" id="git">
+                    <i class="fab fa-github"></i>
+                </a>
+            </div>
+            <p>&copy All Copyrights are reserved to Color Components UI</p>
+
+        </footer>
+    </div>
+    <script src="JS/navbar.js"></script>
+</body>
+
+</html>
