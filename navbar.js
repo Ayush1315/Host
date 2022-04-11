@@ -1,4 +1,4 @@
-var main_Side=1;
+var main_Side=0;
 var side_nav = 1;
 var top_nav = 0;
 var search_nav=0;
