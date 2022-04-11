@@ -13,7 +13,7 @@
 @import "../CSS/chip.css";
 @import "../CSS/card.css";
 @import "../CSS/modal.css";
-@import "../CSS/navbar.css";
+@import "navbar.css";
 
 
 *{
